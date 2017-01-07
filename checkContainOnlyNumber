@@ -1,0 +1,6 @@
+public Boolean checkContainOnlyNumber(String str) {
+    Pattern isnumbers = Pattern.Compile('^[0-9]+$');
+    Matcher postalMatch = isnumbers.matcher(str);
+    return postalMatch.Matches();
+}
+

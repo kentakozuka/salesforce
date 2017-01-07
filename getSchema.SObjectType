@@ -1,0 +1,8 @@
+// 1. 静的に取得
+chema.SObjectType accountType = Account.sObjectType;
+
+// 2. インスタンスから取得
+Schema.SObjectType accountType = new Account().getSObjectType();
+
+// 3. GlobalDescribeから取得
+Schema.SObjectType t = Schema.getGlobalDescribe().get('Account');
