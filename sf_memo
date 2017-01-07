@@ -1,0 +1,70 @@
+SOSL
+    部分一致
+    複数のオブジェクトを検索
+SOQL
+    完全一致
+    1つのオブジェクトを検索
+
+Access Regulation
+    Organization Access
+        IP range
+        Login hours
+    Object Access
+        Profiles
+        Permission set
+    Record Access
+        Role hierarchy
+    Field Access
+        Field level security
+    Roles
+        Record Access
+        Role Hierarchy
+    Profiles
+        Object Access
+        Role Hierarchy
+
+Roles, Profiles, Permmissions sets
+    Profiles & Permmission Sets
+        control a user's object and field-level access permmissions
+    Roles
+        control a user's record-level access permmissions through role hierarchy and shaXX XXX
+
+Execute Anonymousでレコード操作
+Schema Builderでレコード参照
+開発者コンソールからレコード操作
+Renderするときはpagereference型でreturn null
+
+Trigger
+    before
+        レコードがDBに保存される前にレコードの値を更新・検証する場合に使用
+    after
+        デフォルトの項目値にアクセスする場合や、他のレコードの変更に影響を与える場合に使用。
+        実行するレコードは参照のみ
+
+Relationship
+    Lookup Relationship
+    Master-Detail Relationship
+    Many-to-Many Relationship
+
+Profiles
+    What a User Can Do?
+        Set whether fields are visible, required, editable, or read only
+        Control Tab visibility
+        Control App availability
+        Control Object Permissions
+            (CRED: Create, Read, Edit, Delete)
+
+        Other Controls and Permissions on the profiles
+            Page layouts
+            Edit the field level security(FLS)
+                accessing through the object
+            Record type settings
+            Administrative Permissions
+            Login hours
+            IP range
+
+Excel
+    最左のシートのA-1セルで保存して閉じる
+    不必要なシートは削除する
+    ファイルの「作成者」や「前回保存者」などのメタ情報に気を配る。
+    エクセルのメタ情報もチェックする
